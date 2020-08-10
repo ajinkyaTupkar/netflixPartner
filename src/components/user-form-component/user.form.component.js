@@ -3,7 +3,6 @@ import './user.form.component.css';
 import Select from 'react-select';
 import countryList from 'react-select-country-list';
 import ReactTooltip from "react-tooltip";
-import { forStatement } from '@babel/types';
 
 class UserFormComponent extends React.Component {
 
@@ -174,15 +173,15 @@ class UserFormComponent extends React.Component {
         return (
             <div className="form">
                 Please provide the below details <br/><br/>
-                <form onSubmit={this.handleSubmit}>
+                <form onSubmit={this.handleSubmit} className="userForm">
                     <div className="formDiv">  
-                        <label>
+                        <label className="formLabel">
                             Your Nickname:
                             <input type="text" value={this.state.name} onChange={this.handleNameChange} className='formTextInput' />
                         </label>
                     </div>
                     <div className="formDiv">  
-                        <label>
+                        <label className="formLabel">
                             Your Email ID:
                             <input type="text" value={this.state.emailId} onChange={this.handleEmailIdChange} className='formTextInput' data-tip data-for="emailTooltip" />
                             <ReactTooltip id="emailTooltip" place="right" effect="solid">
@@ -192,7 +191,7 @@ class UserFormComponent extends React.Component {
                         </label>
                     </div>
                     <div className="formDiv">  
-                        <label>
+                        <label className="formLabel">
                             Your Country:
                             <Select
                                 options={this.countries}
@@ -203,7 +202,7 @@ class UserFormComponent extends React.Component {
                         </label>
                     </div>
                     <div className="formDiv">  
-                        <label>
+                        <label className="formLabel">
                             Your Gender:
                                 <Select
                                     options={this.genders}
@@ -213,7 +212,7 @@ class UserFormComponent extends React.Component {
                         </label>
                     </div>
                     <div className="formDiv">  
-                        <label>
+                        <label className="formLabel">
                             Preferred Gender of Partners:
                             <Select
                                 options={this.partnerGenders}
@@ -223,7 +222,7 @@ class UserFormComponent extends React.Component {
                         </label>
                     </div>
                     <div className="formDiv">  
-                        <label>
+                        <label className="formLabel">
                             Preferred Number of Screens:
                             <Select
                                 options={this.screens}
@@ -233,7 +232,7 @@ class UserFormComponent extends React.Component {
                         </label>
                     </div>
                     <div className="formDiv">  
-                        <label>
+                        <label className="formLabel">
                             Preferred Number of Partners:
                             <Select
                                 options={this.partners}
@@ -242,7 +241,7 @@ class UserFormComponent extends React.Component {
                             />
                         </label>
                     </div>
-                    <input type="submit" value="Submit" />
+                    <input type="submit" value="Submit" className="formBtn" />
                 </form>
             </div>
             

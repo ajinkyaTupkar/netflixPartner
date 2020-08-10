@@ -8,9 +8,41 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    
+}
+
+.userForm {
+    min-width: 100vh;
+    margin-top: 6vh;
 }
 
 .formDiv {
     font-size: 20px;
-    margin: 10px 15px
+    margin: 10px 15px;
+    display: flex;
+
+}
+
+.formLabel {
+    min-width: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.formBtn {
+    -webkit-appearance: none;
+    width: 25vh;
+    height: 5vh;
+    background: white;
+    color: black;
+    font-size: large;
+    background-color: #ffffff;
+    border: none;
+    padding: 0 0;
+    margin-top: 5vh;
+}
+
+.formDiv input {
+    width: 50vh;
 }
