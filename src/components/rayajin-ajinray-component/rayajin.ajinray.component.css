@@ -2,13 +2,36 @@
     text-align: center;
     width: 100%;
     height: 100%;
-    background-image: url('../../rayajin.png');
-    position:fixed;
+    /* background-image: url('../../rayajin.png'); */
     top:0px;
     left:0px;
-    background-position: center;
+    font-family: 'Kurale', serif;
+    /* background-position: center; */
   }
   
+  .AjinrRay-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    border-bottom: 1px solid grey;
+
+  }
+
+
+  .AjinrRay-header-text{
+    margin-bottom: 0;    
+  }
+
+  .AjinRay-body{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kurale', serif;
+    margin-bottom: 10px;
+  }
+
   .AjinRay-text {
     color: white;
     font-family: 'Kurale', serif;
