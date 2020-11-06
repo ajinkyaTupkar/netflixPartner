@@ -1,13 +1,13 @@
 import React from "react";
 import "./rayajin.ajinray.component.css";
+import image from "../../rayajin.png";
 import heart from "../../heart";
 import ParticlesBg from "particles-bg";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
-import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
-import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { CardMedia } from "@material-ui/core";
 
 const useStyles = makeStyles({
   root: {
@@ -24,6 +24,10 @@ const useStyles = makeStyles({
   pos: {
     marginBottom: 12,
   },
+  img: {
+    paddingTop: "56.25%", // 16:9,
+    marginTop: "30",
+  },
 });
 
 export function OutlinedCard() {
@@ -32,11 +36,16 @@ export function OutlinedCard() {
 
   return (
     <Card className={classes.root} variant="outlined">
+      
       <CardContent>
         <Typography variant="h5" component="h2">
           इज़हार
         </Typography>
         <br />
+        <CardMedia>
+        <img src={image}/>
+      </CardMedia>
+      <br />
         <Typography variant="body" component="p">
           Ik raat thi suhaani, do dilon ki thi meharbaani,
           <br />
@@ -75,7 +84,8 @@ export function OutlinedCard() {
           <br />
           Bas is tasallee k hote hi, daud pada pyaasa nadi ki taraf,
           <br />
-          Thuka, pada, gira, nadi k hausle se sambhala, aur fir daud pada nadi ki taraf,
+          Thuka, pada, gira, nadi k hausle se sambhala, aur fir daud pada nadi
+          ki taraf,
           <br />
           <br />
           Aaj aa gya h pyaasa, apni nadi ke paas,
@@ -94,6 +104,8 @@ export function OutlinedCard() {
           <br />
         </Typography>
       </CardContent>
+      
+
     </Card>
   );
 }
@@ -130,10 +142,6 @@ class RayAjinComponent extends React.Component {
         <div className="AjinRay-body">
           <OutlinedCard />
         </div>
-
-        {/* <div className="AjinRay-text">
-               इज़हार
-               </div> */}
       </div>
     );
   }
