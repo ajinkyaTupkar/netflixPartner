@@ -72,7 +72,7 @@ export function OutlinedCard() {
           Hasa, muskuraya, par thoda dara, ki kaise ye manzil haasil hui use,
           <br />
           <br />
-          Pyaasa to pa hi gaya, thi jo jannat use,
+          Tha to bahut hi khush wo, samete nahi samat raha tha apni khushi me,
           <br />
           Par dheeme hi paanv badhaye, sahama thoda shuruat me,
           <br />
