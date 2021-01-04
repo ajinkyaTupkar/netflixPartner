@@ -7,8 +7,27 @@
     left:0px;
     font-family: 'Kurale', serif;
     /* background-position: center; */
+
+    
+  }
+
+  .AjinRay-btn {
+    background: none;
+    border: none;
+    color: #001eff;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-decoration: underline;
   }
   
+  .AjinRay-btn:hover{
+    cursor: pointer;
+  }
+
+  .AjinRay-btn:focus{
+    outline: none;
+  }
+
   .AjinrRay-header {
     display: flex;
     justify-content: center;
