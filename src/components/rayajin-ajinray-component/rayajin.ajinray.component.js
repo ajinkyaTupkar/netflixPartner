@@ -2,6 +2,7 @@ import React from "react";
 import "./rayajin.ajinray.component.css";
 import image from "../../rayajin.png";
 import image2 from "../../rayajin2.jpg";
+import intezaar from "../../intezaar.jpg"
 import heart from "../../heart";
 import ParticlesBg from "particles-bg";
 import { makeStyles } from "@material-ui/core/styles";
@@ -28,6 +29,29 @@ const useStyles = makeStyles({
   img: {
     paddingTop: "56.25%", // 16:9,
     marginTop: "30",
+  },
+});
+
+const useStyles1 = makeStyles({
+  root: {
+    minWidth: 275,
+    width: "70%",
+  },
+  bullet: {
+    display: "inline-block",
+    margin: "0 2px",
+    transform: "scale(0.8)",
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+  img: {
+    paddingTop: "56.25%", // 16:9,
+    marginTop: "30",
+    width: "60%",
   },
 });
 
@@ -131,8 +155,8 @@ export function OutlinedCard() {
   );
 }
 
-export function OutlinedCard2() {
-  const classes = useStyles2();
+export function OutlinedCard1() {
+  const classes = useStyles1();
   const bull = <span className={classes.bullet}>•</span>;
 
   return (
@@ -301,24 +325,96 @@ export function OutlinedCard2() {
   );
 }
 
+export function OutlinedCard2() {
+  const classes = useStyles2();
+  const bull = <span className={classes.bullet}>•</span>;
+
+  return (
+    <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography variant="h5" component="h2">
+          इंतज़ार
+        </Typography>
+        <br />
+        <CardMedia>
+          <img src={intezaar} width="30%" />
+        </CardMedia>
+        <br />
+        <Typography variant="body" component="p">
+
+          <p>
+            Shit, how did I mess it up? I planned to do a lot of things on this special day, probably the most special day of her life and somehow right now I am not able to think of ANYTHING..
+          </p>
+          <h3>What do I do?</h3>
+          <p>How do I convey what I am feeling?<br></br>
+            I know she has all the butterflies in her stomach and I can just understand how much anxious she might be, waiting for the result link to come on the website. And I know how it feels, of course these two can't be compared, but still I know what it feels and more than that I am myself feeling all those emotions right now. So I can just imagine what might be going on in her mind. When I am all excited, anxious, checking the website multiple times, trying to write some code to know as soon as the result is published, have all those butterflies in the stomach, just waiting for that link to arrive, my heart beating a bit faster every time I reload that page. Ahhhhhhh, writing all of it is making it worse. But hey my friend, my god, just do whatever is best for her, give her all she wants and all she deserves and give me strength to make her distracted from all of it, till the time the result is announced.
+          </p>
+          <p>
+            How do I wish her in the most special way possible?
+            <br></br>
+            Just the simple thought that I am not WITH her on this most special day of her life is also making me a little bit miserable. I just wanted to be there WITH her FOR her, but of course as each thing about our relationship is special, this also has to be made "special" by the pandemic. Another lockdown imposed and all my travel plans ruined. But soon, very soon I will go to her and give her all the gifts and hugs and kisses and everything she wants and needs and deserves and all I WANT to give her. And still I have no clue how to make this most special day of her life even more special. I really need to find a way to make her even more happier, what we call happiestestestestest, when she has just achieved the most important, most awaited milestone of her life.
+          </p>
+
+          <p>How do I tell her how proud I am of her, not for the results, but for the efforts she has put in?<br></br>
+            She has really been true to her efforts, true to her aim, true to her goals, true to everything and everyone in her life throughout this journey. Despite all the hurdles, all the distractions, all the delays, all the pain, all the suffering, all the doubts, all the drama going around; she really never even for a moment got distracted from her goal, all her hours, all her efforts, all her subjects, all her topics, all of this journey. And this is really something I am very proud of and all of it just makes me wonder, how can someone be this dedicated, this committed and have this much resolve for anything. And she to has this for everything in her life. Even me, oh god, thank you so much
+            !
+          </p>
+          <p>How do I let her know that no matter what happens in the result, she is still the best being I know? <br></br>
+            Her kindness, gratitude, personality, confidence, attitude, smartness and also the efforts she put in everything, all of these will take her wherever she wants despite of the results. And I know this, there is nothing, and I repeat NOTHING, that will stop this young, kind, confident, passionate, compassionate, dedicated, smart, ambitious and the best woman in all the universes to achieve whatever she wants in life, and more to get whatever she deserves in life. She really is one hell of a girl. She just has everything people ever dream of, and has none of the attitude that others show with not even half of what she has. And more than everything and anything, she just has the most beautiful soul. And I think, that beautiful soul of hers will take her places and the universe will grant her all her wishes and even beyond.
+          </p>
+          <p>How do I tell her how much privileged I feel to be a part of her journey?<br></br>
+          In the most special journey of her life, and that too in THIS special capacity. Being her partner, trying to make things easy for her, trying to just be with her whenever she needed me. I know there are times I was not there, and even despite everything and my strong want to not let me effecting her in any negative way, somehow I did make things difficult for her and I am really sorry for this dil se. But with all of it, there was never a moment where I did not want to give all my attention, all my time, all my energy, all my efforts, all my blessings, all my thoughts, all my prayers and even all of me to her. Just to be of even a little support, guide and any help of any sort to just elevate her efforts a little, to bring her a little bit closer to her goal, to just be with her. And all of it, was with the utmost gratitude in mind that thank you, thank you god, universe and her, for letting me be a part of this beautiful journey for her's and making it OUR JOURNEY! 
+          </p>
+          <p>
+          How do I tell her that all her tears, all the sleepless nights, all her breakdowns, all the pain, physical and mental, all the compromises, all her efforts..All of it will definitely pay off and we will have the celebration of our lifetime?
+          <br></br>
+          Of course we will. We will just have the bestestestestestest of time and enjoy the result to the core. Because of course people say that it's the journey that is beautiful but that journey was for something even more beautiful, the destination. And when we have reached the destination, how could we not enjoy it to the fullest. And we will, we definitely will...
+          </p>
+          <p>
+            <b>But just one questions, HOW?</b>
+          </p>
+          <p>Agghhhhhhh...</p>
+          <p>
+          Let me just refresh this results tab again meanwhile I figure this out.
+          </p>
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
+
+export function ComponentToRender(props) {
+  const { currentPost } = props;
+  if (currentPost === 0) {
+    return <OutlinedCard />;
+  }
+  else if (currentPost === 1) {
+    return <OutlinedCard1 />;
+  }
+  if (currentPost === 2) {
+    return <OutlinedCard2 />;
+  }
+  return null
+}
+
 class RayAjinComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPost: 1,
+      currentPost: 2,
     };
   }
 
-  onClick = () => {
-    if (this.state.currentPost === 1) {
-      this.setState({
-        currentPost: 0,
-      });
-    } else {
-      this.setState({
-        currentPost: 1,
-      });
-    }
+  onClickPrevPost = () => {
+    this.setState({
+      currentPost: this.state.currentPost - 1,
+    });
+  };
+
+  onClickNextPost = () => {
+    this.setState({
+      currentPost: this.state.currentPost + 1,
+    });
   };
 
   render() {
@@ -337,8 +433,8 @@ class RayAjinComponent extends React.Component {
       cross: "dead",
       random: 10,
     };
-    const buttonText =
-      this.state.currentPost === 1 ? "Previos Post" : "Next Post";
+
+
 
     return (
       <div className="AjinRay">
@@ -348,11 +444,18 @@ class RayAjinComponent extends React.Component {
           <h3>The personal blog of Ray and Ajin</h3>
         </div>
         <div className="AjinRay-body">
-          {this.state.currentPost === 1 ? <OutlinedCard2 /> : <OutlinedCard />}
+          <ComponentToRender currentPost={this.state.currentPost} />
         </div>
-        <div>
-          <button className="AjinRay-btn" onClick={this.onClick}>{buttonText}</button>
-        </div>
+        {
+          this.state.currentPost !== 0 ? (<div>
+            <button className="AjinRay-btn" onClick={this.onClickPrevPost}>{"Previous Post"}</button>
+          </div>) : null
+        }
+        {
+          this.state.currentPost !== 2 ? (<div>
+            <button className="AjinRay-btn" onClick={this.onClickNextPost}>{"Next Post"}</button>
+          </div>) : null
+        }
       </div>
     );
   }
