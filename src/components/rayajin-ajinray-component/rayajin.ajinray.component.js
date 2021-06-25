@@ -577,7 +577,7 @@ class RayAjinComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPost: 5,
+      currentPost: 3,
     };
   }
 
