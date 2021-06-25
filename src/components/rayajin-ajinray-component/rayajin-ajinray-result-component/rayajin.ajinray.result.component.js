@@ -8,7 +8,7 @@ class RayAjinResultComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-        showResult: true,
+        showResult: false,
         rollNum:"410929",
         regNum:"CRO0577579",
         captcha: "",
