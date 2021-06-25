@@ -11,6 +11,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { CardMedia } from "@material-ui/core";
+import RayAjinResultComponent from "./rayajin-ajinray-result-component/rayajin.ajinray.result.component";
 
 const useStyles = makeStyles({
   root: {
@@ -272,15 +273,7 @@ export function OutlinedCard1() {
           <h3>Now....</h3>
           <p>
             As I type this, we have just completed 6 months. 6 months of
-            RayAjinShip, 6 beautiful months of being mesmerised by every little
-            thing of hers.
-          </p>
-          <p>
-            What a beautiful soul she is! All major possible things which could
-            have been big issues, how seamlessly she just accepted those and
-            that too without a second thought. How kind she is! Just being so
-            good and so polite and so well behaved with everyone, like literally
-            everyone. How brave she is! Never let anyone else get a feel of what
+            RayAjinShip, 6 ogo_icai.pngbrave she is! Never let anyone else get a feel of what
             storms are going inside her. Not even me. Just taking care of her
             own self, not letting anyone even remotely realising what is going
             on inside her head and what she is going through. And that too with
@@ -584,7 +577,7 @@ class RayAjinComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPost: 3,
+      currentPost: 5,
     };
   }
 
@@ -593,6 +586,12 @@ class RayAjinComponent extends React.Component {
       currentPost: this.state.currentPost - 1,
     });
   };
+
+  onClickResultButton = () => {
+    this.setState({
+      currentPost: 5,
+    });
+  }
 
   onClickNextPost = () => {
     this.setState({
@@ -619,28 +618,35 @@ class RayAjinComponent extends React.Component {
 
     return (
       <div className="AjinRay">
-        <ParticlesBg type="custom" config={config} bg={true} />
-        <div className="AjinrRay-header">
-          <h1 className="AjinrRay-header-text">RayAjin | AjinRay | US</h1>
-          <h3>The personal blog of Ray and Ajin</h3>
-        </div>
-        <div className="AjinRay-body">
-          <ComponentToRender currentPost={this.state.currentPost} />
-        </div>
-        {this.state.currentPost !== 0 ? (
-          <div>
-            <button className="AjinRay-btn" onClick={this.onClickPrevPost}>
-              {"Previous Post"}
-            </button>
-          </div>
-        ) : null}
-        {this.state.currentPost !== 3 ? (
-          <div>
-            <button className="AjinRay-btn" onClick={this.onClickNextPost}>
-              {"Next Post"}
-            </button>
-          </div>
-        ) : null}
+        {
+          this.state.currentPost === 5 ? (<RayAjinResultComponent />) : (
+            <div>
+            <ParticlesBg type="custom" config={config} bg={true} />
+            <div className="AjinrRay-header">
+              <h1 className="AjinrRay-header-text">RayAjin | AjinRay | US</h1>
+              <h3>The personal blog of <button className="AjinRay-result-btn" onClick={this.onClickResultButton}>Ray</button> and Ajin</h3>
+            </div>
+            <div className="AjinRay-body">
+              <ComponentToRender currentPost={this.state.currentPost} />
+            </div>
+            {this.state.currentPost !== 0 ? (
+              <div>
+                <button className="AjinRay-btn" onClick={this.onClickPrevPost}>
+                  {"Previous Post"}
+                </button>
+              </div>
+            ) : null}
+            {this.state.currentPost !== 3 ? (
+              <div>
+                <button className="AjinRay-btn" onClick={this.onClickNextPost}>
+                  {"Next Post"}
+                </button>
+              </div>
+            ) : null}
+            </div>
+          )
+        }
+        
       </div>
     );
   }
