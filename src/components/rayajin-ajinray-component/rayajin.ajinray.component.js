@@ -4,6 +4,7 @@ import image from "../../rayajin.png";
 import image2 from "../../rayajin2.jpg";
 import intezaar from "../../intezaar.jpg";
 import khat from "../../khat.jpg";
+import varsh from "../../varsh.png";
 import heart from "../../heart";
 import ParticlesBg from "particles-bg";
 import { makeStyles } from "@material-ui/core/styles";
@@ -273,36 +274,36 @@ export function OutlinedCard1() {
           <h3>Now....</h3>
           <p>
             As I type this, we have just completed 6 months. 6 months of
-            RayAjinShip, 6 ogo_icai.pngbrave she is! Never let anyone else get a feel of what
-            storms are going inside her. Not even me. Just taking care of her
-            own self, not letting anyone even remotely realising what is going
-            on inside her head and what she is going through. And that too with
-            a smile on her face. I just wish I could have sensed all of those
-            things. I am sorry Ray. I will definitely do better. How smart she
-            is! How quickly she figured out to use her earring to get the sim
-            out of the phone when we first met. Also, the solution for me to
-            reach hotel on time and in turn spending more time with her. Just
-            take my scooty. That was so smart. I really do not find others'
-            smart but she really is one hell of a smart person. How hard working
-            she is! Just giving her everything towards her goal, no matter what,
-            even when she is sick or has to sacrifice on her sleep. How
-            determined she is! Once decided, she has to do it. Even if it means
-            driving for 1 hour to pick me up at the airport even after being
-            sick. Or spending all the time with me even if it means taking a lot
-            of paracetamols How loving she is! She just has all the love for me
-            and nothing else. I have never even believed that such love was even
-            remotely possible. And how caring she is! I have always felt void of
-            people close to me when I needed them the most. But she is always
-            there. Through all the thick and thins. Even if she remotely feels
-            that I need her. Leaving everything aside, she just made sure that
-            she is there for me. Even if it means not sleeping or not studying
-            just few days before exams. And of course, not to forget, how
-            beautiful she is! I just can keep looking at her all my life and
-            never get tired. She is just the beautifulestestestestestest,
-            cutestestestestestestestest and even hottestestestestestest and
-            sexiestestestestestestest being in all the universes. Though to me,
-            she will always be my cutie pie. My Ray. My Jaan. My Jahaan. My
-            Zindagi. My Sabkuch.
+            RayAjinShip, 6 ogo_icai.pngbrave she is! Never let anyone else get a
+            feel of what storms are going inside her. Not even me. Just taking
+            care of her own self, not letting anyone even remotely realising
+            what is going on inside her head and what she is going through. And
+            that too with a smile on her face. I just wish I could have sensed
+            all of those things. I am sorry Ray. I will definitely do better.
+            How smart she is! How quickly she figured out to use her earring to
+            get the sim out of the phone when we first met. Also, the solution
+            for me to reach hotel on time and in turn spending more time with
+            her. Just take my scooty. That was so smart. I really do not find
+            others' smart but she really is one hell of a smart person. How hard
+            working she is! Just giving her everything towards her goal, no
+            matter what, even when she is sick or has to sacrifice on her sleep.
+            How determined she is! Once decided, she has to do it. Even if it
+            means driving for 1 hour to pick me up at the airport even after
+            being sick. Or spending all the time with me even if it means taking
+            a lot of paracetamols How loving she is! She just has all the love
+            for me and nothing else. I have never even believed that such love
+            was even remotely possible. And how caring she is! I have always
+            felt void of people close to me when I needed them the most. But she
+            is always there. Through all the thick and thins. Even if she
+            remotely feels that I need her. Leaving everything aside, she just
+            made sure that she is there for me. Even if it means not sleeping or
+            not studying just few days before exams. And of course, not to
+            forget, how beautiful she is! I just can keep looking at her all my
+            life and never get tired. She is just the
+            beautifulestestestestestest, cutestestestestestestestest and even
+            hottestestestestestest and sexiestestestestestestest being in all
+            the universes. Though to me, she will always be my cutie pie. My
+            Ray. My Jaan. My Jahaan. My Zindagi. My Sabkuch.
           </p>
 
           <p>
@@ -557,6 +558,104 @@ export function OutlinedCard3() {
   );
 }
 
+export function OutlinedCard4() {
+  const classes = useStyles3();
+  const bull = <span className={classes.bullet}>•</span>;
+
+  return (
+    <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography variant="h5" component="h2">
+          वर्ष
+        </Typography>
+        <br />
+        <CardMedia>
+          <img src={varsh} width="30%" />
+        </CardMedia>
+        <br />
+        <Typography variant="body" component="p">
+          <h3>1 year ago...</h3>
+          <p>I love you!!!</p>
+          <p>There, I said it.</p>
+          <p>
+            With all the overflowing emotions, amongst the chaos of a deadly
+            disease, in middle of the sorrow of losing a loved one.
+          </p>
+
+          <p>There, I said it.</p>
+          <p>
+            This had been coming up in my mind, till my throat any time I talked
+            with her. Every time I put the phone down, I really wanted to say
+            these three magical words. Because that's what I felt, LOVE. Yes,
+            love for her. The way she just stood besides me, the way she took
+            care of me, the way she was just there for me, the way she made me
+            realise that there was someone who did care about me, who was there
+            for me, and who took efforts for me. I somehow had stopped expecting
+            all of these from someone else, and just accepted and also wanted to
+            just give whatever I have to offer without expecting anything in
+            return. Just give to the extent you can and be happy. But there she
+            came, who gave back. Not just back but more than what I ever gave
+            her, what I ever did for her, what I was still doing for her. Much
+            more than all of it combined, and that too without even asking. Then
+            how can I not give her all what I have to offer, and try to do much
+            much much more than that. How can I not? And probably, this is what
+            love should be, and definitely...
+          </p>
+          <p>This is what I feel for her... </p>
+          <p>Love.</p>
+
+          <h3>Now...</h3>
+          <p>No it was not love...</p>
+          <p>It was something much beyond...</p>
+          <p>
+            Calling it "love" is a huge huge huge understatement. What I have
+            felt, experienced, observed, witnessed, noticed, perceived and also
+            discovered is something much much much beyond the human
+            comprehension. It is divine, or may be just just just angelic.
+            Because she is one. An angel directly from heaven, who just has all
+            the heavenly experiences for me. Like really, all the experiences, I
+            have, are heavenly. My each and every conversation, each and every
+            meeting, each and every call, each and every message, each and every
+            video call. Everything, all of it is just pure heaven.
+          </p>
+
+          <p>
+            And I am just glad, beyond what I can express; thankful, beyond what
+            I can ever be; and grateful, beyond what I could ever comprehend
+            that I am the one who gets to experience this heaven. This heaven
+            where I can be whatever I chose to be, where I can feel good about
+            even the worse of events, where I have a smile on my face, even when
+            the world is falling apart. Because at the back of my mind, I know
+            that I have her, as I call it, my jaan, my jahaan, my zindagi, my
+            heart, my soul, my energy, my happiness, my EVERYTHING. Who would
+            just give me the best of everything. Emotions, feelings, happiness,
+            courage, bravery, thoughts, everything. And when I have best of all
+            the best that universe has to offer, how can I be worried about
+            ANYTHING else. And that's how I get my constant happiness from her.
+          </p>
+          <p>
+            This constant happiness, this feeling, to just do everything and
+            anything for her, to travel for miles just to see that smile on her
+            face, to be up for hours, just to hear her voice, to feel happy in
+            her happiness, to be sad in her sorrows, to try to pull all the
+            strings together, just to have a moment of togetherness, to think
+            everything, beyond my own self, to be happy just by her presence,
+            to have your day turned around, by just that smile, and to be ready to
+            do anything and everything, just to see that smile on her face.
+            THIS is not love. THIS is something WAY beyond, something very
+            special, something which is difficult to comprehend, impossible to
+            understand, something which just feels divine, feels spiritual,
+            feels out of this universe. THIS something is not love.
+          </p>
+          <p>
+            <b>This is something much beyond!!!</b>
+          </p>
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
+
 export function ComponentToRender(props) {
   const { currentPost } = props;
   if (currentPost === 0) {
@@ -570,6 +669,9 @@ export function ComponentToRender(props) {
   if (currentPost === 3) {
     return <OutlinedCard3 />;
   }
+  if (currentPost === 4) {
+    return <OutlinedCard4 />;
+  }
   return null;
 }
 
@@ -577,7 +679,7 @@ class RayAjinComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPost: 3,
+      currentPost: 4,
     };
   }
 
@@ -591,7 +693,7 @@ class RayAjinComponent extends React.Component {
     this.setState({
       currentPost: 5,
     });
-  }
+  };
 
   onClickNextPost = () => {
     this.setState({
@@ -618,13 +720,23 @@ class RayAjinComponent extends React.Component {
 
     return (
       <div className="AjinRay">
-        {
-          this.state.currentPost === 5 ? (<RayAjinResultComponent />) : (
-            <div>
+        {this.state.currentPost === 5 ? (
+          <RayAjinResultComponent />
+        ) : (
+          <div>
             <ParticlesBg type="custom" config={config} bg={true} />
             <div className="AjinrRay-header">
               <h1 className="AjinrRay-header-text">RayAjin | AjinRay | US</h1>
-              <h3>The personal blog of <button className="AjinRay-result-btn" onClick={this.onClickResultButton}>Ray</button> and Ajin</h3>
+              <h3>
+                The personal blog of{" "}
+                <button
+                  className="AjinRay-result-btn"
+                  onClick={this.onClickResultButton}
+                >
+                  Ray
+                </button>{" "}
+                and Ajin
+              </h3>
             </div>
             <div className="AjinRay-body">
               <ComponentToRender currentPost={this.state.currentPost} />
@@ -636,17 +748,15 @@ class RayAjinComponent extends React.Component {
                 </button>
               </div>
             ) : null}
-            {this.state.currentPost !== 3 ? (
+            {this.state.currentPost !== 4 ? (
               <div>
                 <button className="AjinRay-btn" onClick={this.onClickNextPost}>
                   {"Next Post"}
                 </button>
               </div>
             ) : null}
-            </div>
-          )
-        }
-        
+          </div>
+        )}
       </div>
     );
   }

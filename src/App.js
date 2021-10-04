@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 function App() {
 
   useEffect(() => {
-    document.title = "ICAI Exam Results"
+    document.title = "RayAjin"
   }, [])
 
   return (
