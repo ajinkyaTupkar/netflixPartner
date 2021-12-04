@@ -9,7 +9,7 @@ class RayAjinResultComponent extends React.Component {
     super(props);
     this.state = {
         showResult: false,
-        rollNum:"410929",
+        rollNum:"152364",
         regNum:"CRO0577579",
         captcha: "",
         error : false
@@ -61,7 +61,7 @@ handleCaptchaChange = (e) => {
                     <table className="table">
                         <tr>
                             <td>Roll Number</td>
-                            <td>410929</td>
+                            <td>152364</td>
                         </tr>
                         <tr className="tr-blue">
                             <td>Name</td>
@@ -77,23 +77,23 @@ handleCaptchaChange = (e) => {
                         </tr>
                         <tr>
                             <td>Financial Reporting</td>
-                            <td>056</td>
+                            <td>058</td>
                         </tr>
                         <tr>
                             <td>Strategic Financial Management</td>
-                            <td>065</td>
+                            <td>068</td>
                         </tr>
                         <tr>
                             <td>Advanced Auditing and Professional Ethics</td>
-                            <td>062</td>
+                            <td>064</td>
                         </tr>
                         <tr>
                             <td>Corporate and Economic Laws</td>
-                            <td>052</td>
+                            <td>058</td>
                         </tr>
                         <tr className="tr-bold">
                             <td>Total</td>
-                            <td>235</td>
+                            <td>248</td>
                         </tr>
                         <tr className="tr-blue" style={{background: '#004d80'}}>
                             <td>Result</td>
@@ -105,23 +105,23 @@ handleCaptchaChange = (e) => {
                         </tr>
                         <tr>
                             <td>Strategic Cost Management & Performance Evaluation</td>
-                            <td>055</td>
+                            <td>058</td>
                         </tr>
                         <tr>
                             <td>Elective Paper [6D Economic Laws]</td>
-                            <td>082</td>
+                            <td>084</td>
                         </tr>
                         <tr>
                             <td>Direct Tax Laws & International Taxation</td>
-                            <td>074</td>
+                            <td>075</td>
                         </tr>
                         <tr>
                             <td>Indirect Tax Laws</td>
-                            <td>068</td>
+                            <td>070</td>
                         </tr>
                         <tr className="tr-bold">
                             <td>Total</td>
-                            <td>279</td>
+                            <td>287</td>
                         </tr>
                         <tr className="tr-blue" style={{background : '#004d80'}}>
                             <td>RESULT</td>
@@ -129,7 +129,7 @@ handleCaptchaChange = (e) => {
                         </tr>
                         <tr className="tr-blue" style={{background : '#004d80'}}>
                             <td>Grand Total</td>
-                            <td>514</td>
+                            <td>535</td>
                         </tr>
                     </table>
                 </div>
