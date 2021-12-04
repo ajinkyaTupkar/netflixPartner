@@ -53,7 +53,7 @@ handleCaptchaChange = (e) => {
                 </div>
             </div>
             <div className="AjinRay-result-text">
-                Final (New) Exmination Results, July 2021
+                Final (New) Exmination Results, December 2021
             </div>
 
             { this.state.showResult ? (
