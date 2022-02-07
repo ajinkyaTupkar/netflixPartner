@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./rayajin.ajinray.component.css";
 import image from "../../rayajin.png";
 import image2 from "../../rayajin2.jpg";
@@ -6,6 +6,9 @@ import intezaar from "../../intezaar.jpg";
 import khat from "../../khat.jpg";
 import varsh from "../../varsh.png";
 import heart from "../../heart";
+import img1 from "../../img1.jpg";
+import img2 from "../../img2.jpg";
+import img3 from "../../img3.jpg";
 import ParticlesBg from "particles-bg";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -13,6 +16,8 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import { CardMedia } from "@material-ui/core";
 import RayAjinResultComponent from "./rayajin-ajinray-result-component/rayajin.ajinray.result.component";
+import { red } from "@material-ui/core/colors";
+import { NoEncryption } from "@material-ui/icons";
 
 const useStyles = makeStyles({
   root: {
@@ -656,6 +661,134 @@ export function OutlinedCard4() {
   );
 }
 
+const useStyles5 = makeStyles({
+  root: {
+    minWidth: 275,
+    width: "70%",
+  },
+  bullet: {
+    display: "inline-block",
+    margin: "0 2px",
+    transform: "scale(0.8)",
+  },
+  title: {
+    fontSize: 14,
+  },
+  pos: {
+    marginBottom: 12,
+  },
+  img: {
+    paddingTop: "56.25%", // 16:9,
+    marginTop: "30",
+    width: "60%",
+  },
+  h2: {
+    color: "#c37070",
+  },
+  button1:{
+    color: "#5e905e",
+    fontSize: "xx-large",
+    background: "None",
+    border: "None",
+    margin: "1% 1%",
+    "&:hover": {
+      cursor: 'pointer',
+      backgroundColor: "#c1f1df",
+      
+    },
+    "&:active": {
+      borderColor: "#5e905e",
+      backgroundColor: "#c1f1df",
+    },
+    "&:focus": {
+      borderColor: "#5e905e",
+      backgroundColor: "#c1f1df",
+    },
+    width: "30%"
+  },
+  button2:{
+    color: "#b16666",
+    fontSize: "xx-large",
+    background: "None",
+    border: "None",
+    "&:hover": {
+      cursor: 'pointer',
+      backgroundColor: "#fbd8d8",
+      
+    },
+    margin: "1% 1%",
+    
+    "&:active": {
+      borderColor: "#fbd8d8",
+      backgroundColor: "#fbd8d8",
+    },
+    "&:focus": {
+      borderColor: "#fbd8d8",
+      backgroundColor: "#fbd8d8",
+    },
+    width: "30%"
+  }
+});
+
+export function OutlinedCard5() {
+  const classes = useStyles5();
+  const bull = <span className={classes.bullet}>•</span>;
+  const [image, setImage] = useState(null);
+
+  return (
+    <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography className={classes.h2} variant="h2" component="h2">
+          Will you be my valentine?
+        </Typography>
+        <br />
+        <CardMedia>
+          {image === null ? (<img src={img1} width="30%" />): null}
+          {image === "Yes" ? (
+            <div>
+              <img src={img3} width="30%" />
+              <p>
+                Yayyyyyyyy!!!
+              </p>
+              <p>
+                Seems like I have got the bestestestestestest and the beautifulestestestestestest date in entire universe.
+                Thank you soooooooooooo much for making me the luckiestestestest guy in the entire universe.
+              </p>
+              <p>
+                A very happy propose day and a very happy valentine's week.
+              </p>
+              <p>
+                !!! I love you !!!
+              </p>
+
+            </div>): null}
+          {image === "No" ? (
+            <div>
+              <img src={img2} width="30%" />
+              <p>
+                How can you say no to this cutestestestset guy!!!
+              </p>
+              <p>
+                Please try again.
+              </p>
+
+            </div>): null}
+          
+        </CardMedia>
+        <br />
+        <Typography variant="body" component="p">
+          <div>
+            <button className={classes.button1} onClick={() => setImage("Yes")}>Hell Yes !!!</button>
+          </div>
+          <div>
+            <button className={classes.button2} onClick={() => setImage("No")}>Naahh</button>
+          </div>
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
+
 export function ComponentToRender(props) {
   const { currentPost } = props;
   if (currentPost === 0) {
@@ -672,6 +805,9 @@ export function ComponentToRender(props) {
   if (currentPost === 4) {
     return <OutlinedCard4 />;
   }
+  if (currentPost === 5) {
+    return <OutlinedCard5 />;
+  }
   return null;
 }
 
@@ -679,7 +815,7 @@ class RayAjinComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPost: 4,
+      currentPost: 5,
     };
   }
 
@@ -691,7 +827,7 @@ class RayAjinComponent extends React.Component {
 
   onClickResultButton = () => {
     this.setState({
-      currentPost: 5,
+      currentPost: 1000,
     });
   };
 
@@ -720,10 +856,13 @@ class RayAjinComponent extends React.Component {
 
     return (
       <div className="AjinRay">
-        {this.state.currentPost === 5 ? (
-          <RayAjinResultComponent />
-        ) : (
-          <div>
+        {
+          (() => {
+            if (this.state.currentPost === 1000){
+              return <RayAjinResultComponent/>
+            } else {
+              return (
+                <div>
             <ParticlesBg type="custom" config={config} bg={true} />
             <div className="AjinrRay-header">
               <h1 className="AjinrRay-header-text">RayAjin | AjinRay | US</h1>
@@ -748,7 +887,7 @@ class RayAjinComponent extends React.Component {
                 </button>
               </div>
             ) : null}
-            {this.state.currentPost !== 4 ? (
+            {this.state.currentPost !== 5 ? (
               <div>
                 <button className="AjinRay-btn" onClick={this.onClickNextPost}>
                   {"Next Post"}
@@ -756,7 +895,13 @@ class RayAjinComponent extends React.Component {
               </div>
             ) : null}
           </div>
-        )}
+
+              )
+
+            }
+          })()
+        }
+        
       </div>
     );
   }
