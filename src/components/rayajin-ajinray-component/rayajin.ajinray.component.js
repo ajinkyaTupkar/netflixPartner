@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./rayajin.ajinray.component.css";
 import image from "../../rayajin.png";
 import image2 from "../../rayajin2.jpg";
+import image7 from "../../ol7.jpeg";
 import intezaar from "../../intezaar.jpg";
 import khat from "../../khat.jpg";
 import varsh from "../../varsh.png";
@@ -174,6 +175,57 @@ export function OutlinedCard() {
           To ab jo h ye pyaasa, apni nadi k paas,
           <br />
           Kahna chahta h nadi se, dil me kabse thi jo baat,
+          <br />
+          <br />
+          To thodi nazar uthaiye, dekhiye is pyaase ko,
+          <br />
+          Suniye zara, kuch kah raha h apni nadi se wo...
+          <br />
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
+
+export function OutlinedCard7() {
+  const classes = useStyles();
+  const bull = <span className={classes.bullet}>•</span>;
+
+  return (
+    <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography variant="h5" component="h2">
+        प्रस्ताव
+        </Typography>
+        <br />
+        <CardMedia>
+          <img src={image7} />
+        </CardMedia>
+        <br />
+        <Typography variant="body" component="p">
+          Ek bhataka hua raahi tha, use mila ek saathi tha,
+          <br />
+          Raah aasaan to na thi, par ek aasaan hamraahi tha,
+          <br />
+          <br />
+          Kuch ahankaari parvat the, kai toofani nadiyaan thi,
+          <br />
+          Par kuch pakke dhaage the, har aad paar karate the,
+          <br />
+          <br />
+          Ek jab hua pyaasa, nadi bani thi hamsafar,
+          <br />
+          Pyaas to bujhai hi, aas jagai har taraf,
+          <br />
+          <br />
+          Chal to rahe ab bhi h, sangharsh kam bhi nahi h,
+          <br />
+          Lekin jo door dikh raha tha, aaj paas lag raha h,
+          <br />
+          <br />
+          To fir se ek aas liye, ye pyaasa paas aaya h,
+          <br />
+          Aur fir se ek baar, nadi ke liye kuch laaya h,
           <br />
           <br />
           To thodi nazar uthaiye, dekhiye is pyaase ko,
@@ -789,6 +841,65 @@ export function OutlinedCard5() {
   );
 }
 
+export function OutlinedCard6() {
+  const classes = useStyles5();
+  const bull = <span className={classes.bullet}>•</span>;
+  const [image, setImage] = useState(null);
+
+  return (
+    <Card className={classes.root} variant="outlined">
+      <CardContent>
+        <Typography className={classes.h2} variant="h2" component="h2">
+          Will you be my valentine?
+        </Typography>
+        <br />
+        <CardMedia>
+          {image === null ? (<img src={img1} width="30%" />): null}
+          {image === "Yes" ? (
+            <div>
+              <img src={img3} width="30%" />
+              <p>
+                Yayyyyyyyy!!!
+              </p>
+              <p>
+                Seems like I have got the bestestestestestest and the beautifulestestestestestest date in entire universe.
+                Thank you soooooooooooo much for making me the luckiestestestest guy in the entire universe.
+              </p>
+              <p>
+                A very happy propose day and a very happy valentine's week.
+              </p>
+              <p>
+                !!! I love you !!!
+              </p>
+
+            </div>): null}
+          {image === "No" ? (
+            <div>
+              <img src={img2} width="30%" />
+              <p>
+                How can you say no to this cutestestestset guy!!!
+              </p>
+              <p>
+                Please try again.
+              </p>
+
+            </div>): null}
+          
+        </CardMedia>
+        <br />
+        <Typography variant="body" component="p">
+          <div>
+            <button className={classes.button1} onClick={() => setImage("Yes")}>Hell Yes !!!</button>
+          </div>
+          <div>
+            <button className={classes.button2} onClick={() => setImage("No")}>Naahh</button>
+          </div>
+        </Typography>
+      </CardContent>
+    </Card>
+  );
+}
+
 export function ComponentToRender(props) {
   const { currentPost } = props;
   if (currentPost === 0) {
@@ -808,6 +919,9 @@ export function ComponentToRender(props) {
   if (currentPost === 5) {
     return <OutlinedCard5 />;
   }
+  if (currentPost === 6) {
+    return <OutlinedCard7 />;
+  }
   return null;
 }
 
@@ -815,7 +929,7 @@ class RayAjinComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPost: 5,
+      currentPost: 6,
     };
   }
 
