@@ -9,6 +9,29 @@
     /* background-position: center; */
 
   }
+  .heart-beat {
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+    white-space: break-spaces;
+  }
+  .particles-bg-canvas-self {
+    position: fixed !important;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.2);
+    }
+  }
 
   .AjinRay-btn {
     background: none;

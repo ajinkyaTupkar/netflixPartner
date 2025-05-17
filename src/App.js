@@ -1,7 +1,8 @@
 import React from 'react';
 import {
-  Route,
-  BrowserRouter
+  BrowserRouter,
+  Routes,
+  Route
 } from "react-router-dom";
 import './App.css';
 import RootComponent from './components/root-component/root.component';
@@ -19,14 +20,13 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
-        <Route exact path="/" component={RayAjinComponent}/>
-        <Route path="/form" component={UserFormComponent}/>
-        <Route path="/thankyou" component={ThankyouComponent}/>
+        <Routes>
+          <Route path="/" element={<RayAjinComponent />} />
+          <Route path="/form" element={<UserFormComponent />} />
+          <Route path="/thankyou" element={<ThankyouComponent />} />
+        </Routes>
       </BrowserRouter>
     </div>
-    // <Route path="/stuff" component={Stuff}/>
-    // <Route path="/contact" component={Contact}/>
-            
   );
 }
 

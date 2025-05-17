@@ -2,7 +2,8 @@ import React from 'react';
 import './user.form.component.css';
 import Select from 'react-select';
 import countryList from 'react-select-country-list';
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
+
 
 class UserFormComponent extends React.Component {
 

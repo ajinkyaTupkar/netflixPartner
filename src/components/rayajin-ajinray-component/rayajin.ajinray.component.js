@@ -11,14 +11,15 @@ import img1 from "../../img1.jpg";
 import img2 from "../../img2.jpg";
 import img3 from "../../img3.jpg";
 import ParticlesBg from "particles-bg";
-import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import Typography from "@material-ui/core/Typography";
-import { CardMedia } from "@material-ui/core";
+import { makeStyles } from '@mui/styles';
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import { CardMedia } from "@mui/material";
 import RayAjinResultComponent from "./rayajin-ajinray-result-component/rayajin.ajinray.result.component";
-import { red } from "@material-ui/core/colors";
-import { NoEncryption } from "@material-ui/icons";
+import RayAjinCorrectionComponent from "./rayajin-correction-component/rayajin.correction.component";
+import { red } from "@mui/material/colors";
+import { NoEncryption } from "@mui/icons-material";
 
 const useStyles = makeStyles({
   root: {
@@ -922,6 +923,9 @@ export function ComponentToRender(props) {
   if (currentPost === 6) {
     return <OutlinedCard7 />;
   }
+  if (currentPost === 7) {
+    return <RayAjinCorrectionComponent />;
+  }
   return null;
 }
 
@@ -929,7 +933,7 @@ class RayAjinComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPost: 6,
+      currentPost: 7,
     };
   }
 
@@ -975,12 +979,17 @@ class RayAjinComponent extends React.Component {
             if (this.state.currentPost === 1000){
               return <RayAjinResultComponent/>
             } else {
-              return (
+                return (
                 <div>
-            <ParticlesBg type="custom" config={config} bg={true} />
-            <div className="AjinrRay-header">
-              <h1 className="AjinrRay-header-text">RayAjin | AjinRay | US</h1>
-              <h3>
+                <ParticlesBg type="custom" config={config} bg={true} />
+                <div className="AjinrRay-header">
+                
+                <h1 className="AjinrRay-header-text">
+                <span className="heart-beat heart-left">❤️ </span>
+                RayAjin
+                <span className="heart-beat heart-right"> ❤️</span>
+                </h1>
+                <h3>
                 The personal blog of{" "}
                 <button
                   className="AjinRay-result-btn"
@@ -989,28 +998,28 @@ class RayAjinComponent extends React.Component {
                   Ray
                 </button>{" "}
                 and Ajin
-              </h3>
-            </div>
-            <div className="AjinRay-body">
-              <ComponentToRender currentPost={this.state.currentPost} />
-            </div>
-            {this.state.currentPost !== 0 ? (
-              <div>
+                </h3>
+                </div>
+                <div className="AjinRay-body">
+                <ComponentToRender currentPost={this.state.currentPost} />
+                </div>
+                {this.state.currentPost !== 0 ? (
+                <div>
                 <button className="AjinRay-btn" onClick={this.onClickPrevPost}>
                   {"Previous Post"}
                 </button>
-              </div>
-            ) : null}
-            {this.state.currentPost !== 5 ? (
-              <div>
+                </div>
+                ) : null}
+                {this.state.currentPost !== 7 ? (
+                <div>
                 <button className="AjinRay-btn" onClick={this.onClickNextPost}>
                   {"Next Post"}
                 </button>
-              </div>
-            ) : null}
-          </div>
-
-              )
+                </div>
+                ) : null}
+                
+                </div>
+                )
 
             }
           })()

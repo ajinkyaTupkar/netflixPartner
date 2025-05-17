@@ -1,7 +1,7 @@
 import React from "react";
 import "./rayajin.ajinray.result.component.css";
 import ResultHeader from "./logo_icai.png"
-import { TransferWithinAStationSharp } from "@material-ui/icons";
+import { TransferWithinAStationSharp } from "@mui/icons-material";
 
 
 class RayAjinResultComponent extends React.Component {
