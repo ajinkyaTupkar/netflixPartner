@@ -20,6 +20,7 @@ import RayAjinResultComponent from "./rayajin-ajinray-result-component/rayajin.a
 import RayAjinCorrectionComponent from "./rayajin-correction-component/rayajin.correction.component";
 import { red } from "@mui/material/colors";
 import { NoEncryption } from "@mui/icons-material";
+import RayAjinFiveYearsComponent from "./rayajin-five-years-component/rayajin.five.years.component";
 
 const useStyles = makeStyles({
   root: {
@@ -926,6 +927,9 @@ export function ComponentToRender(props) {
   if (currentPost === 7) {
     return <RayAjinCorrectionComponent />;
   }
+  if (currentPost === 8) {
+    return <RayAjinFiveYearsComponent />;
+  }
   return null;
 }
 
@@ -933,7 +937,7 @@ class RayAjinComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPost: 7,
+      currentPost: 8,
     };
   }
 
@@ -1010,7 +1014,7 @@ class RayAjinComponent extends React.Component {
                 </button>
                 </div>
                 ) : null}
-                {this.state.currentPost !== 7 ? (
+                {this.state.currentPost !== 8 ? (
                 <div>
                 <button className="AjinRay-btn" onClick={this.onClickNextPost}>
                   {"Next Post"}
