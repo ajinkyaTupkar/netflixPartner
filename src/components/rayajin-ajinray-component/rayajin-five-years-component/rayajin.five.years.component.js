@@ -1,7 +1,7 @@
 import React from "react";
 import "../rayajin.ajinray.component.css";
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
-import five from "./five.jpg"; // Replace with the correct path to image7
+import five from "./fiveyears.png"; // Replace with the correct path to image7
 import { makeStyles } from "@mui/styles";
 
 const useStyles = makeStyles({
